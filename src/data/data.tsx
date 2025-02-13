@@ -10,7 +10,6 @@ import {
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import heroImage from '../images/snowmountain.png';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -24,6 +23,7 @@ import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import qingwang from '../images/qingwang.jpg';
 import profilepic from '../images/snowboard.jpg';
+import heroImage from '../images/snowmountain.png';
 import testimonialImage from '../images/testimonial.jpg';
 import {
   About,
