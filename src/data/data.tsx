@@ -9,11 +9,8 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/snowmountain.png';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -434,9 +431,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/YongJi97'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/yongjichen/'},
 ];
