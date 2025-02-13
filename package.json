@@ -8,7 +8,8 @@
     "compile": "yarn run -T tsc --build --verbose",
     "dev": "yarn compile && yarn next dev",
     "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
-    "start": "yarn next start",
+    "lint:fix": "yarn lint --fix",
+    "start": "yarn next start -p 3002",
     "sitemap": "yarn next-sitemap"
   },
   "dependencies": {
@@ -60,5 +61,6 @@
   },
   "resolutions": {
     "autoprefixer": "10.4.5"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

@@ -25,8 +25,9 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+import qingwang from '../images/qingwang.jpg';
+import profilepic from '../images/snowboard.jpg';
+import testimonialImage from '../images/testimonial.jpg';
 import {
   About,
   ContactSection,
@@ -44,8 +45,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Yong Ji Chen Resume',
+  description: 'Welcome to my resume.',
 };
 
 /**
@@ -69,18 +70,17 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Yong Ji Chen.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a NYC based <strong className="text-stone-100">Native C++/Full Stack Software Engineer</strong>, currently
+        working at <strong className="text-stone-100">Here</strong> helping build a modern Enterprise Browser.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me honing my <strong className="text-stone-100">snowboarding skills</strong>
+        , <strong className="text-stone-100">building keyboards</strong>, or looking for new ways to{' '}
+        <strong className="text-stone-100">self host services</strong>.
       </p>
     </>
   ),
@@ -104,16 +104,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a software engineer with a passion for building innovative solutions. I have experience in developing applications using C++, React, and Node.js. I am always eager to learn new technologies and improve my skills.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'New York, NY', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Chinese / American', Icon: FlagIcon},
+    {label: 'Interests', text: 'Snowboard, Keyboard, Photography, Drone Flying', Icon: SparklesIcon},
+    {label: 'Study', text: 'University At Buffalo', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Here', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -126,15 +124,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
+        level: 9,
       },
     ],
   },
@@ -143,7 +133,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 9,
+        level: 7,
       },
       {
         name: 'Typescript',
@@ -151,7 +141,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'GraphQL',
-        level: 6,
+        level: 7,
       },
     ],
   },
@@ -162,30 +152,22 @@ export const skills: SkillGroup[] = [
         name: 'Node.js',
         level: 8,
       },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Native Development',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'C++',
+        level: 7,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'STL',
+        level: 7,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Google Test',
+        level: 6,
       },
     ],
   },
@@ -268,39 +250,121 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2015',
+    location: 'University At Buffalo',
+    title: 'Bachelors of Science in Computer Science',
+    content: (
+      <p>
+        <strong>CSE 115LLR</strong> - Introduction to Computer Science I<br />
+        <strong>CSE 116LLB</strong> - Introduction to Computer Science II
+        <br />
+        <strong>CSE 191LR</strong> - Introduction to Discrete Structures
+        <br />
+        <strong>CSE 199SR</strong> - UB Seminar
+        <br />
+        <strong>CSE 220LLB</strong> - Systems Programming
+        <br />
+        <strong>CSE 250LR</strong> - Data Structures
+        <br />
+        <strong>CSE 305LR</strong> - Introduction to Programming Languages
+        <br />
+        <strong>CSE 331LR</strong> - Algorithms and Complexity
+        <br />
+        <strong>CSE 341LR</strong> - Computer Organization
+        <br />
+        <strong>EAS 360LEC</strong> - STEM Communications
+        <br />
+        <strong>MTH 141LR</strong> - College Calculus I<br />
+        <strong>MTH 142LR</strong> - College Calculus II
+        <br />
+        <strong>MTH 309LR</strong> - Introductory Linear Algebra
+      </p>
+    ),
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'September 2023 - Present',
+    location: 'Here',
+    title: 'Software Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I developed new features for Here Browser, enabling users to integrate custom search providers. I implemented
+        APIs and configurations to support MPEG LA codec playback and Entra SSO for Microsoft. Additionally, I improved
+        logging bottlenecks by creating a new solution using easylogging++, allowing for larger log sizes and extended
+        application runtime.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'October 2022 - September 2023',
+    location: 'Haven Technologies',
+    title: 'Fullstack Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I developed and enhanced underwriting workflows and rules to assess customer risk, increasing SaaS coverage and
+        improving client integration flexibility. I resolved multiple defects, improving the underwriting engine’s
+        accuracy and reducing false positives by 5%. Utilizing DBeaver, I queried over 100k+ in-force policies to create
+        data visualizations that supported data-driven product decisions. I implemented a feature to fetch and persist
+        government identification in newly created database tables, integrating it with AngularJS and RxJS on the
+        frontend. Additionally, I built APIs to parse new policy application fields and transform them into Haven’s
+        custom specification, increasing ACCORD standardization coverage by 2%.
+      </p>
+    ),
+  },
+  {
+    date: 'June 2019 - October 2022',
+    location: 'OpenFin',
+    title: 'Software Engineer',
+    content: (
+      <p>
+        Led the development of a multithreaded C++11 desktop agent deployed on 40K+ financial institution desktops,
+        optimizing performance by reducing latency and removing bottlenecks. Designed and implemented a critical “smart
+        install” feature used by 85% of clients, enabling tailored deployments. Managed project release cycles in
+        two-week sprints, leading architecture discussions and mentoring junior engineers. Spearheaded the auto-update
+        system, ensuring seamless deployment to 10K+ desktops while enhancing reliability with the “singularity”
+        feature, reducing customer deployment queries by 12% monthly. Additionally, developed recovery strategies for
+        potential auto-update failures, improving system resilience.
+      </p>
+    ),
+  },
+  {
+    date: 'Janurary 2018 - December 2018',
+    location: 'Group Nine Media',
+    title: 'QA Engineer Intern',
+    content: (
+      <p>
+        Worked with the test automation team to write end to end integration tests using Robot Framework. Gathered
+        necessary test scenarios and steps from manual QA testers and automated them.
+      </p>
+    ),
+  },
+  {
+    date: 'June 2017 - August 2017',
+    location: 'Code Nation',
+    title: 'Coding Instructor',
+    content: <p>Taught two groups of 20 students each on how to code in HTML, CSS and JavaScript.</p>,
+  },
+  {
+    date: 'June 2016 - August 2016',
+    location: 'Hudson Guild',
+    title: 'Coding Instructor',
+    content: <p>Taught a group of 10 students how to code in HTML, CSS and JavaScript.</p>,
+  },
+  {
+    date: 'June 2015 - August 2015',
+    location: 'American Express',
+    title: 'Software Developer Intern',
+    content: <p>Wrote end to end integration tests using AngularJS.</p>,
+  },
+  {
+    date: 'June 2014 - August 2014',
+    location: 'Group Nine Media',
+    title: 'Software Developer Intern',
+    content: (
+      <p>
+        Worked with design team to revamp the company's contact page. Utilized technologies such as PHP, HTML and CSS.
       </p>
     ),
   },
@@ -313,9 +377,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Qing Wang',
+      text: `I have had the pleasure of working with Yongji on the UWCI team for the past year. Yongji is a quick learner who is always eager to take on new challenges. He is also a proactive team member who is always willing to help others. Yongji has made significant contributions to the team, including:
+- Volunteering to lead a project to improve the team's code review process
+- Asking thoughtful questions that have helped the team solve complex problems
+- Consistently delivering high-quality code that is clean, efficient, and easy to understand.
+I am confident that Yongji would be an asset to any team. He is a hard worker, a quick learner, and a team player. I highly recommend him for any software engineering position.',
+`,
+      image: qingwang,
     },
     {
       name: 'Jane Doe',
