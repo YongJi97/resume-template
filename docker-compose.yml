@@ -1,9 +1,9 @@
 version: '3.8'
-
 services:
   app:
     container_name: resume-website
     image: yongjichen/resume-website
+    platform: linux/amd64
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,7 +11,4 @@ services:
       - "3002:3002"
     environment:
       - PORT=3002
-    volumes:
-      - .:/app
-      - /app/node_modules
     command: yarn start
