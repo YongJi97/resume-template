@@ -96,6 +96,9 @@ export const heroData: Hero = {
   ],
 };
 
+const age =
+  new Date().getFullYear() - 1997 - (new Date().setFullYear(new Date().getFullYear(), 3, 23) > Date.now() ? 1 : 0);
+
 /**
  * About section
  */
@@ -104,7 +107,7 @@ export const aboutData: About = {
   description: `I am a software engineer with a passion for building innovative solutions. I have experience in developing applications using C++, React, and Node.js. I am always eager to learn new technologies and improve my skills.`,
   aboutItems: [
     {label: 'Location', text: 'New York, NY', Icon: MapIcon},
-    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Age', text: `${age}`, Icon: CalendarIcon},
     {label: 'Nationality', text: 'Chinese / American', Icon: FlagIcon},
     {label: 'Interests', text: 'Snowboard, Keyboard, Photography, Drone Flying', Icon: SparklesIcon},
     {label: 'Study', text: 'University At Buffalo', Icon: AcademicCapIcon},
