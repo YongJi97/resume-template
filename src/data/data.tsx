@@ -414,8 +414,13 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'yongji97',
+      href: 'https://github.com/yongji97',
+    },
+    {
+      type: ContactType.LinkedIn,
+      text: 'yongjichen',
+      href: 'https://www.linkedin.com/in/yongjichen/',
     },
   ],
 };
