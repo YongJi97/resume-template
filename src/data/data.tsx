@@ -319,13 +319,15 @@ export const experience: TimelineItem[] = [
     title: 'Software Engineer',
     content: (
       <p>
-        Led the development of a multithreaded C++11 desktop agent deployed on 40K+ financial institution desktops,
-        optimizing performance by reducing latency and removing bottlenecks. Designed and implemented a critical “smart
-        install” feature used by 85% of clients, enabling tailored deployments. Managed project release cycles in
-        two-week sprints, leading architecture discussions and mentoring junior engineers. Spearheaded the auto-update
-        system, ensuring seamless deployment to 10K+ desktops while enhancing reliability with the “singularity”
-        feature, reducing customer deployment queries by 12% monthly. Additionally, developed recovery strategies for
-        potential auto-update failures, improving system resilience.
+        I developed and maintained a multithreaded desktop agent using C++11, currently running on over 45,000 desktops
+        at banks and financial institutions. I reduced latency and optimized critical paths in the code by identifying
+        and eliminating bottlenecks, improving startup time. I enhanced a self-installing feature used by 85% of
+        clients, enabling custom deployments based on client needs. I also managed the deployment of new product
+        versions via auto-update, instantly deploying updates across 10,000+ desktops. I created data visualizations in
+        Grafana to track installation, feature usage, and health statistics, reducing internal support queries.
+        Additionally, I developed a fallback mechanism for unmanaged desktop environments to ensure consistent
+        deployment and user experience. I migrated the legacy testing framework to MochaJS and integrated it with GitLab
+        CI/CD, improving test coverage and visibility.
       </p>
     ),
   },
